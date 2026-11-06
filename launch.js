@@ -1,16 +1,21 @@
+
 /* Copyright (c) 2026 mansoor0x | 1_X @ZeroMan. */
-/* Wait for the offline cache to finish before starting the exploit modules. */
+/* ARABE - GoldHEN 14.00 */
+
 (function () {
     var cache = window.applicationCache;
-    var status = document.getElementById("status");
+    var status = document.getElementById("estado");
     var launched = false;
 
     function show(text) {
-        if (status) status.textContent = text;
+        if (status) {
+            status.textContent = text;
+        }
     }
 
     function start() {
         if (launched) return;
+
         launched = true;
 
         show("Offline cache saved on this PS4!");
