@@ -1,32 +1,112 @@
+
 <!DOCTYPE html>
-<html lang="en" manifest="cache.appcache">
+<html lang="es" manifest="cache.appcache">
 <head>
-  <meta name="author" content="mansoor0x">
-  <meta name="copyright" content="Copyright 2026 mansoor0x | 1_X @ZeroMan">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PS4 14.00 · GoldHEN</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="ARABE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="copyright" content="Copyright 2026 mansoor0x | 1_X @ZeroMan. Personalización ARABE">
+
+  <title>ARABE · GoldHEN 14.00</title>
+
   <style>
-    * { box-sizing: border-box; }
-    html, body { min-height: 100%; }
-    body {
-      margin: 0; padding: 20px; background: #fff; color: #000;
-      font: 13px 'Courier New', monospace; text-align: center;
+    * {
+      box-sizing: border-box;
     }
-    #out { max-width: 900px; margin: 0 auto; white-space: pre-wrap; word-wrap: break-word; }
-    .highlight { color: #c00; font-weight: bold; }
-    h1 { margin: 0 0 18px; font-size: 18px; font-weight: bold; }
-    #status { margin-top: 24px; }
-    .dot { display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; background: #c00; }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 25px 15px;
+      background:
+        radial-gradient(ellipse at top, #253b88 0%, transparent 65%),
+        linear-gradient(145deg, #080b22, #171044, #071a3a);
+      color: #ffffff;
+      font: 14px monospace;
+      text-align: center;
+    }
+
+    #afuera {
+      max-width: 900px;
+      margin: 0 auto;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+
+    h1 {
+      color: #f5c542;
+      font-size: 25px;
+      font-weight: bold;
+      text-shadow: 0 0 15px #a77bff;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: #d8d5ff;
+    }
+
+    #estado {
+      margin-top: 25px;
+      padding: 15px;
+      border: 1px solid #7555dc;
+      border-radius: 12px;
+      background: rgba(60, 45, 130, 0.35);
+      box-shadow: 0 0 20px rgba(100, 70, 255, 0.2);
+    }
+
+    .punto {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: #36ff9c;
+      box-shadow: 0 0 12px #36ff9c;
+      animation: pulsar 1s infinite alternate;
+    }
+
+    .destacar {
+      color: #f5c542;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #aaa5d5;
+      font-size: 11px;
+    }
+
+    @keyframes pulsar {
+      from { opacity: 0.35; }
+      to { opacity: 1; }
+    }
   </style>
 </head>
+
 <body>
-  <main id="out">
-    <h1>PS4 14.00 · GoldHEN</h1>
-    <p>Preparing offline exploit cache...</p>
-    <p id="status"><span class="dot"></span><span class="highlight">Starting automatically</span></p>
+  <main id="afuera">
+
+    <h1>ARABE · GOLDHEN 14.00</h1>
+
+    <p>Preparando la caché de exploits sin conexión...</p>
+
+    <p id="estado">
+      <span class="punto"></span>
+      <span class="destacar">Iniciando automáticamente</span>
+    </p>
+
   </main>
-  <footer style="margin-top:42px;color:#777;font-size:11px">© 2026 mansoor0x · 1_X @ZeroMan</footer>
+
+  <footer>
+    © 2026 ARABE · GOLDHEN
+    <br>
+    Personalización ARABE
+  </footer>
+
   <script src="launch.js"></script>
 </body>
 </html>
